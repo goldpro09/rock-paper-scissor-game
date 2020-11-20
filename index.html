@@ -1,0 +1,57 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissor Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/icon.png" type="image/png">
+  </head>
+  <body>
+      <header>
+          <h1>Rock Paper Scissor</h1>
+      </header>
+
+    
+    <div class="score-board">
+        <span class="user-choice">Paper</span>
+        
+        <div id="user-label" class="badge">user</div>
+        <div id="computer-label" class="badge">comp</div>
+        <span id="user-score">0</span>:<span id="computer-score">0</span>
+
+        <span class="computer-choice">Rock</span>
+    </div>
+
+    
+
+    <div class="result">
+        <p>Paper covers rock. You win!</p>
+    </div>
+
+    <div class="choices">
+        <div class="choice" id="r">
+            <img src="assets/rock.png" alt="Rock">
+        </div>
+        <div class="choice" id="p">
+            <img src="assets/paper.png" alt="Paper">
+        </div>
+        <div class="choice" id="s">
+            <img src="assets/scissor.png" alt="Scissor">
+        </div>
+    </div>
+
+
+    <p id="action-message">Make your move.</p>
+    <div class="htp">
+        <a href="#" class="htp-link" onclick="showHelp()">How to play</a>
+    </div>
+
+    <div id="help-box">
+        Make a move between rock, paper or scissors, 
+        then the computer will also make a move and compare who won, 
+        very simple, right?
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
